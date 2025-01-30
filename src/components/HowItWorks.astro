@@ -1,0 +1,40 @@
+---
+import StepCard from "../components/StepCard.astro";
+import '@fontsource/twinkle-star';
+import stepImage from '../assets/stepimage.svg';
+import step1 from '../assets/step1.png';
+import step2 from '../assets/step2.png';
+import step3 from '../assets/step3.png';
+import step4 from '../assets/step4.png';
+---
+
+<section class="relative bg-[#FDEAD0] py-10 mr-8 ml-8">
+
+  <!-- Judul -->
+  <h2 class="text-center text-2xl font-poppins font-semibold text-[32px] relative z-10">
+    How does it work?
+  </h2>
+  <p class="text-center text-gray-600 mt-2 font-poppins font-light text-[20px] relative z-10">
+    Sebenarnya tinggal kabarin Radit mau baca buku yang mana...
+  </p>
+
+  <!-- Step Image sebagai Background -->
+  <div class="relative mt-10 flex justify-center">
+    <img src={stepImage.src} alt="Step Background" class="absolute w-[85%] h-auto opacity-30" />
+
+    <!-- Step Cards dengan posisi sesuai desain -->
+    <div class="relative grid grid-cols-2 gap-6 px-10 z-20">
+      <!-- Step 1 (Kiri Atas) -->
+      <img src={step1.src} alt="Step 1" class="w-[374px] h-auto" />
+
+      <!-- Step 2 (Kanan Atas) -->
+      <img src={step2.src} alt="Step 2" class="w-[374px] h-auto" />
+
+      <!-- Step 3 (Kiri Bawah) -->
+      <img src={step3.src} alt="Step 3" class="w-[374px] h-auto" />
+
+      <!-- Step 4 (Kanan Bawah) -->
+      <img src={step4.src} alt="Step 4" class="w-[374px] h-auto" />
+    </div>
+  </div>
+</section>

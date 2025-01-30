@@ -1,0 +1,22 @@
+---
+import bookIcon from '../assets/bookIcon.svg';
+import logo from '../assets/logo.png';
+// import "../styles/global.css";
+import '@fontsource/twinkle-star';
+---
+
+<header class="flex relative items-start p-5 pl-20 w-full justify-between bg-[#FCF7E9]">
+  <!-- Logo + Nama Brand -->
+  <div class="flex items-center space-x-2 flex-1 ml-8 mt-8 mr-8">
+    <img src={logo.src} alt="Buku Radit Logo" class="w-[303px] h-[74px]"/>
+  </div>  
+
+  <!-- Navigasi di Kanan -->
+  <nav class="flex items-center space-x-2">
+    <a href="#" class="flex items-center space-x-2 mr-8">
+      <img src={bookIcon.src} alt="Book Icon" class="w-[17.5px] h-[19.5px]"/>
+      <span class="nav-text text-black font-semibold font-manrope text-[20px]">Buku Buku Radit</span>
+    </a>
+  </nav>
+</header>
+

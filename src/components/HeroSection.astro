@@ -1,0 +1,42 @@
+---
+import '@fontsource/twinkle-star';
+import heroImage from '../assets/heroImage.png';
+import wave from '../assets/wave.svg';
+---
+
+<!-- HeroSection -->
+<section class="relative bg-[#FCF7E9]">
+  <div class="flex relative items-start p-5 pl-20 w-full justify-between">
+    <!-- Teks di Kiri -->
+    <div class="text-left max-w-2xl p-0 ml-8 mt-8 mr-8">
+      <h1 class="font-poppins font-semibold text-[64px] tracking-[0.1px] text-[#323438] leading-[73px] m-0 p-0">
+          Because All Books
+          Deserve To Be Read
+          Time And Overtime
+      </h1>      
+        
+      <!-- tulisan kiri -->
+      <p class="text-[#526069] max-w-lg mt-4 font-poppins text-[20px]">
+        Kamu mau coba baca buku? kamu bingung mau baca apa? pinjem aja dulu barangkali cocok.
+      </p>
+  
+      <!-- button -->
+      <button class="bg-[#F9698C] text-[#FFF2E2] px-5 py-2 rounded-[1000px] font-poppins font-semibold text-[20px] mt-6">
+        Pinjem Dit
+      </button>
+    </div>
+  
+    <!-- Hero Image di Kanan -->
+    <div class="text-left max-w-2xl ml-8 mt-8 mr-10">
+      <div class="w-[655.15px] h-[514px]">
+          <img src={heroImage.src} alt="Hero Image" class="w-full h-auto" />
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Wave Image di bawah -->
+  <div class="items-left mt-[90px] align-top block leading-none text-[0px]">
+    <img src={wave.src} alt="Wave" class="w-full h-auto " />
+  </div>
+</section>
